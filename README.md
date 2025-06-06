@@ -1,32 +1,51 @@
-# 🚌 Bus Tracking Web Application
+# 🚌 Modern Bus Booking Web Application
 
-This is a web-based bus tracking system built using modern front-end tools including **TypeScript**, **Tailwind CSS**, and **Vite**. 
-The system aims to provide real-time tracking and user interaction features for public or private bus transportation.And can book the bus
+A modern, responsive, and scalable bus booking platform built using **React**, **TypeScript**, **Tailwind CSS**, and **Vite**. 
+It integrates user interface animations, routing, state management, and real-time features to deliver a seamless experience for bus seat reservations.
 
 ## 🚀 Features
 
-- Responsive UI with Tailwind CSS
-- Fast development build using Vite
-- Scalable architecture using TypeScript
-- Environmental configuration using `.env`
+- Search and book bus tickets
+- View available buses by date and destination
+- Seat selection interface
+- Realtime database support (via [Supabase](https://supabase.io/))
+- Animations with Framer Motion
+- Modular and reusable UI components
+- Environment-based configuration
 
-## 📁 Project Structure
+## 🛠️ Tech Stack
+
+- **React 18**
+- **TypeScript**
+- **Tailwind CSS**
+- **Vite**
+- **Supabase** (for authentication and backend)
+- **Zustand** (state management)
+- **Framer Motion** (animations)
+- **React Router DOM** (routing)
+
+## 📦 Project Structure
 
 ```
 bus/
-├── index.html              # Entry HTML file
-├── package.json            # NPM package config
-├── tailwind.config.js      # Tailwind CSS configuration
+├── index.html              # Main entry HTML
+├── src/                    # React app source files
+│   ├── components/         # UI Components
+│   ├── pages/              # App pages like Booking, Home, etc.
+│   ├── hooks/              # Custom hooks
+│   └── lib/                # API & utilities
+├── public/                 # Static assets
+├── tailwind.config.js      # Tailwind configuration
 ├── tsconfig.json           # TypeScript configuration
 ├── vite.config.ts          # Vite bundler config
 └── .env                    # Environment variables
 ```
 
-## 🛠️ Installation & Setup
+## ⚙️ Getting Started
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/bus-tracking.git
+   git clone https://github.com/manideep-19/online-bus-booking.git
    cd bus
    ```
 
@@ -35,10 +54,10 @@ bus/
    npm install
    ```
 
-3. **Configure environment**
-   - Add your variables in `.env`
+3. **Add environment variables**
+   - Create a `.env` file and add your Supabase project details.
 
-4. **Run the project**
+4. **Run development server**
    ```bash
    npm run dev
    ```
@@ -48,13 +67,6 @@ bus/
    npm run build
    ```
 
-## 📦 Technologies Used
-
-- [Vite](https://vitejs.dev/)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [Node.js](https://nodejs.org/)
-
 ## 📄 License
 
-This project is licensed under the MIT License.
+This project is licensed under the **MIT License**.
